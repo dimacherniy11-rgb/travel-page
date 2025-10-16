@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <header><h1>Таблиця для заповнення анкетних даних</h1></header>
+    <main>
+        <form method="post">
+            <fieldset>
+                <legend>Персональна Інформація</legend>
+                <label for="full-name">Повне ім'я</label>
+                <input type="text" id="full-name" name="name" placeholder="напр. Каріна Шустрік" required size="16">
+                <label for="email">Email адреса(обов'язково):</label>
+          <input
+            placeholder="murkahunter@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="18"
+          />
+          <label for="age">Рік народження</label>
+          <input type="number" name="age" id="age" min="1900" max="2025"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Це ваша перша подорож?</legend>
+          <input id="yes-option" type="radio" name="hotel-stay" />
+          <label for="yes-option">Так</label>
+          <input id="no-option" type="radio" name="hotel-stay" />
+          <label for="no-option">Ні</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+            Яка країна(и) вам сподобалося найбільше?
+          </legend>
+
+          <input type="checkbox" id="country" name="country" value="country" />
+          <label for="country">Греція</label>
+
+          
+
+          </legend>
+
+          <input type="checkbox" id="country" name="country" value="country" />
+          <label for="country">Італія</label>
+
+          
+
+          </legend>
+
+          <input type="checkbox" id="country" name="country" value="country" />
+          <label for="country">Франція</label>
+
+          
+            </fieldset>
+
+            <fieldset>
+          <legend>Як би ви оцінили наш сервіс?</legend>
+
+          <label for="service">Оцініть від 1 до 5</label>
+
+          <select name="service" id="service">
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option selected value="1">1</option>
+          </select>
+          </fieldset>
+
+          
+<fieldset>
+        <label for="comments">Якщо хочете можете додати свій коментар <img src="/arrow.png"  alt="стрілка вниз" width="16" height="16"></label>
+        <br>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+        </form>
+    </main>
+    </fieldset>
+    <button type="submit">Відправити</button>
+</body>
+</html>
